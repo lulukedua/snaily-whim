@@ -30,11 +30,25 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_bloc: ^8.1.0
+  flutter_native_splash: ^2.4.7
+  badges: ^3.2.0
+  app_badge_plus: ^1.2.9
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
   supabase_flutter: ^2.14.1
+  equatable: ^2.0.8
+  flutter_svg: ^2.3.0
+
+flutter_native_splash:
+  color: "#FFF6F9"
+  image: assets/img/logo.png
+  android_12:                   # Specific for Android 12+
+    image: assets/img/logo.png
+    color: "#FFF6F9"
+  android: true
 
 dev_dependencies:
   flutter_test:
@@ -58,10 +72,23 @@ flutter:
   # the material Icons class.
   uses-material-design: true
 
+  fonts:
+    - family: ArtPostBlack
+      fonts:
+          - asset: assets/fonts/ArtPostBlack.ttf
+    - family: Cakewalk
+      fonts:
+          - asset: assets/fonts/Cakewalk.ttf
+
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
+  assets:
+    - assets/img/logo.svg
+    - assets/img/kumbang.png
+    - assets/img/flower.png
+    - assets/img/logo.png
+    - assets/img/logotanpateks.png
   #   - images/a_dot_ham.jpeg
+  
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
