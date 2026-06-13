@@ -44,6 +44,8 @@ dependencies:
   flutter_floating_bottom_bar: ^2.0.0
   lucide_icons_flutter: ^3.1.14+2
   image_picker: ^1.1.2
+  intl: ^0.20.2
+  smooth_page_indicator: ^1.2.0
 
 flutter_native_splash:
   color: "#FFF6F9"
