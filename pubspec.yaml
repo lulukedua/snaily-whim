@@ -50,6 +50,7 @@ dependencies:
   webview_flutter: ^4.8.0
   infinite_scroll_pagination: ^5.1.1
   flutter_local_notifications: ^22.0.1
+  provider: ^6.1.5+1
 
 flutter_native_splash:
   color: "#FFF6F9"
