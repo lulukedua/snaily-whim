@@ -15,6 +15,7 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
   Future<void> _onAppStarted(AppStarted event, Emitter<AuthState> emit) async {
     try {
       final user = await repository.getCurrentUser();
+      developer.log('Current User: ${user?.email}', name: 'AuthBloc');
       if (user != null) {
         emit(Authenticated(user));
       } else {
@@ -54,13 +55,9 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
       emit(Unauthenticated());
       developer.log('Register Success', name: 'AuthBloc');
     }
-    // catch (e) {
-    //   emit(AuthError(e.toString()));
-    //   developer.log('Register Error: $e', name: 'AuthBloc');
-    // }
     catch (e) {
-      print(e.runtimeType);
-      print(e);
+      developer.log('Register Error: $e', name: 'AuthBloc');
+      emit(AuthError(e.toString()));
     }
   }
 
