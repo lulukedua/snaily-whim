@@ -53,6 +53,7 @@ dependencies:
   provider: ^6.1.5+1
   shared_preferences: ^2.3.0
   awesome_snackbar_content: ^0.1.8
+  flutter_dotenv: ^6.0.1
 
 flutter_native_splash:
   color: "#FFF6F9"
