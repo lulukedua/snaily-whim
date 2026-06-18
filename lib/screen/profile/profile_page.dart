@@ -87,9 +87,9 @@ class _ProfilePageState extends State<ProfilePage> {
         }
       },
       child: Scaffold(
-        backgroundColor: Colors.grey.shade50,
+        backgroundColor: AppColors.bgColor,
         appBar: AppBar(
-          backgroundColor: Colors.grey.shade50,
+          backgroundColor: AppColors.bgBtmColor,
           elevation: 0,
           title: const Text(
             "Profile",
