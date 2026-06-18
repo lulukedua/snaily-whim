@@ -108,6 +108,9 @@ flutter:
     - assets/img/logo.png
     - assets/img/logotanpateks.png
     - assets/gif/success.gif
+    - assets/img/car1.png
+    - assets/img/car2.png
+    - assets/img/car3.png
   #   - images/a_dot_ham.jpeg
   
 
