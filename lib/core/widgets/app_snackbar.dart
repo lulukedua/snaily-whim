@@ -12,6 +12,7 @@ class AppSnackbar {
     required String title,
     required String message,
     SnackType type = SnackType.info,
+    double bottomMargin = 90,
   }) {
     final contentType = _mapType(type);
     final color = _mapColor(type);
@@ -20,6 +21,7 @@ class AppSnackbar {
       elevation: 0,
       behavior: SnackBarBehavior.floating,
       backgroundColor: Colors.transparent,
+      margin: EdgeInsets.only(bottom: bottomMargin, left: 16, right: 16),
       content: AwesomeSnackbarContent(
         title: title,
         message: message,
