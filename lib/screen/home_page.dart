@@ -159,7 +159,7 @@ class _HomeViewState extends State<_HomeView> {
                     physics: const BouncingScrollPhysics(),
                     slivers: [
                       const SliverToBoxAdapter(child: SizedBox(height: 16)),
-                      const SliverToBoxAdapter(child: HomeBannerCarousel()),
+                      SliverToBoxAdapter(child: HomeBannerCarousel()),
                       const SliverToBoxAdapter(child: SizedBox(height: 24)),
 
                       SliverPadding(
